@@ -4,7 +4,7 @@
 
 # Allows you to connect nodes and check for connectivity in lg*N time
 
-# Time Complexity: N to initialize, lg*N for union and find
+# Time Complexity: O(N) to initialize, O(lg*N) for union and find
 # Space Complexity: N
 
 class UnionFind:
