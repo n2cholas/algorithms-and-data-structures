@@ -1,5 +1,10 @@
 # Max Priority Queue
 
+# Implemented with Binary Heap
+
+# Constant get max
+# log n insert, delete min
+
 class MaxPQ:
     def __init__(self):
         self.n = 0
@@ -12,6 +17,9 @@ class MaxPQ:
         self.n += 1
         self.pq.append(x)
         self.swim(self.n)
+
+    def max(self):
+        return self.pq[1]
 
     def delMax(self):
         if not self.n:
